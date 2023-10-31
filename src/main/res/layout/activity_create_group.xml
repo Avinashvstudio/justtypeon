@@ -1,0 +1,39 @@
+<!-- activity_create_group.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".CreateGroupActivity">
+
+    <EditText
+        android:id="@+id/editTextGroupName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Group Name"
+        android:inputType="text"
+        android:layout_marginBottom="16dp" />
+
+    <TextView
+        android:id="@+id/addMembersButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select Members to Add:"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Use a RecyclerView or ListView to display a list of users to select members -->
+    <!-- For simplicity, let's assume you have a RecyclerView with checkboxes for user selection -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/memberListLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp" />
+
+    <Button
+        android:id="@+id/buttonCreateGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Create Group" />
+</LinearLayout>
